@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-char num_comb;
-for (num_comb = 10; num_comb <= 99; num_comb++)
+int num_comb;
+for (num_comb = '10'; num_comb <= '99'; num_comb++)
 {
 putchar(num_comb);
-putchar(",");
+putchar(',');
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
