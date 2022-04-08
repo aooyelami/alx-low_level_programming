@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-int num_comb;
-for (num_comb = '10'; num_comb <= '99'; num_comb++)
+int numcomb;
+for (numcomb = '10'; numcomb <= '99'; numcomb++)
 {
-putchar(num_comb);
+putchar(numcomb);
 putchar(',');
 }
 putchar('\n');
