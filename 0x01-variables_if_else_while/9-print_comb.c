@@ -12,6 +12,7 @@ for (numcomb = '10'; numcomb <= '99'; numcomb++)
 {
 putchar(numcomb);
 putchar(',');
+putchar(' ');
 }
 putchar('\n');
 return (0);
