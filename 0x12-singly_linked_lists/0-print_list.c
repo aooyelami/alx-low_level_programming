@@ -5,17 +5,17 @@
  * @h: list
  * Return: number of nodes
  */
-size_t print_list(const list_t *y)
+size_t print_list(const list_t *h)
 {
 	int strt = 0;
 
-	for (; y; strt++)
+	for (; h; strt++)
 	{
-		if (!y->str)
+		if (!h->str)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", y->len, y->str);
-		y = y->next;
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
 	}
 	return (strt);
 }
