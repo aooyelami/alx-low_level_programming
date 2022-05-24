@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - Prototype that returns num of element
+ * list_len - returns num of element
  * @h: linked list
  * Return: num of elemets
  */
@@ -9,7 +9,7 @@ size_t list_len(const list_t *h)
 {
 	int strt = 0;
 
-	for (; h; el++)
+	for (; h; strt++)
 		h = h->next;
 
 	return (strt);
