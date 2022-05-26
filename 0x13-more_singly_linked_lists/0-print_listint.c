@@ -5,14 +5,16 @@
  * @h: listint_t
  * Return: size_t
  */
+
 size_t print_listint(const listint_t *h)
 {
-	int count = 0;
+	size_t count = 0;
 
-	for (; h; h = h->next, count++)
+	while (h != NULL)
 	{
-		printf("%d\n", h->n);
+		printf("%i\n", h->n);
+		h = h->next;
+		count++;
 	}
-
 	return (count);
 }
